@@ -1,0 +1,12 @@
+{
+    "validUser": {
+
+        "firstName": "Pedro",
+        "lastName": "Silva",
+        "userName": "pedro_silva",
+        "password": "12345678",
+        "confirmPassword": "12345678"
+
+    }
+
+}
