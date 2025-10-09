@@ -7,13 +7,19 @@ const userSignup = new SignupPage();
 
 describe("Fazer login com dados válidos", () => {
     it("Deve fazer login com informações válidas", () => {
-        //userLogin.accessLoginPage();
+        
         // cadastrar o usuário e depois testa o login
         userSignup.accessSignupPage();
         userSignup.userSignup(userData.validUser.firstName, userData.validUser.lastName,
                           userData.validUser.userName, userData.validUser.password,
                           userData.validUser.confirmPassword);
-                          
+
         userLogin.login(userData.validUser.userName, userData.validUser.password);
+    });
+
+    it.only("Não deve fazer login com dados inválidos", () => {
+        userLogin.accessLoginPage();
+        userLogin.login(userData.invalidUser.username, userData.invalidUser.password);
+        userLogin.checkMessageForInvalidData();
     })
 });

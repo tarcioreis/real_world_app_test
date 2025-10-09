@@ -7,6 +7,11 @@
         "password": "12345678",
         "confirmPassword": "12345678"
 
+    },
+
+    "invalidUser": {
+        "username": "test",
+        "password": "test123"
     }
 
 }
