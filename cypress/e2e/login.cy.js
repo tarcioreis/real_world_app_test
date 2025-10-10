@@ -19,7 +19,7 @@ describe("Fazer login com dados válidos", () => {
 
     it.only("Não deve fazer login com dados inválidos", () => {
         userLogin.accessLoginPage();
-        userLogin.login(userData.invalidUser.username, userData.invalidUser.password);
+        userLogin.login(userData.invalidUserLogin.username, userData.invalidUserLogin.password);
         userLogin.checkMessageForInvalidData();
     })
 });

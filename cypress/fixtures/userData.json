@@ -9,7 +9,15 @@
 
     },
 
-    "invalidUser": {
+    "invalidUserRegister": {
+        "firstName": "tes",
+        "lastName": "si",
+        "userName": "t",
+        "password": "123",
+        "confirmPassword": "123"
+    },
+
+    "invalidUserLogin": {
         "username": "test",
         "password": "test123"
     }

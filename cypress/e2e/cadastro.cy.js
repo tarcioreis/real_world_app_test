@@ -11,4 +11,15 @@ describe('Registro de usuário com dados válidos', () => {
                           userData.validUser.confirmPassword);
     
   })
+
+  it.only('Não deve registrar usuário com dados inválidos', ()=> {
+    userSignup.accessSignupPage();
+    userSignup.userSignup(userData.invalidUserRegister.firstName,
+                          userData.invalidUserRegister.lastName,
+                          userData.invalidUserRegister.userName,
+                          userData.invalidUserRegister.password,
+                          userData.invalidUserRegister.confirmPassword
+    );
+
+  });
 })
